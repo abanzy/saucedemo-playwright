@@ -1,0 +1,28 @@
+{
+    "name": "saucedemo-playwright",
+    "version": "1.0.0",
+    "private": true,
+    "description": "SauceDemo QA Challenge - Playwright + TypeScript automation",
+    "scripts": {
+        "test": "playwright test",
+        "test:ui": "playwright test --project=ui-chromium",
+        "test:api": "playwright test --project=api",
+        "test:list": "playwright test --list"
+    },
+    "devDependencies": {
+        "@playwright/test": "^1.62.1",
+        "@types/node": "^22.19.21",
+        "typescript": "^5.9.3"
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "semi": true,
+        "singleQuote": true
+    },
+    "engines": {
+        "node": ">=20.0.0"
+    },
+    "dependencies": {
+        "dotenv": "^17.4.2"
+    }
+}
